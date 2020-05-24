@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scatterplot</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.jqueryui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables_themeroller.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <h1>Blazar Data Analysis</h1>
+    <div class="row container-fluid step" id="selection-container">
+        <div class="sub-select">Intensity (Flx(V)</div>
+        <label class="switch">
+            <input id = 'intensity' onchange="intensity_update()"
+                    type="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+        <div class="sub-select">V-J</div>
+        <label class="switch">
+            <input id = 'color' onchange="color_update()"
+                   type="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+    </div>
+
+    <div id="viz-container"></div>
+</body>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-scale-radial.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/d3-scale-chromatic.v1.min.js"></script>
+<script src="js/d3-color.v1.min.js"></script>
+<script src="js/d3-interpolate.v1.min.js"></script>
+<script src="js/main.js"></script>
+</html>
